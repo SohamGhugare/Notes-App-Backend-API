@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+// Model Schema
 const NoteSchema = mongoose.Schema({
     title: {
         type: String,
@@ -12,10 +13,6 @@ const NoteSchema = mongoose.Schema({
     date: {
         type: Date,
         default: Date.now
-    },
-    owner: {
-        type: String,
-        required: true
     }
 });
 
