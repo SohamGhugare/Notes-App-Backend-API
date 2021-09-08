@@ -12,6 +12,10 @@ const NoteSchema = mongoose.Schema({
     date: {
         type: Date,
         default: Date.now
+    },
+    owner: {
+        type: String,
+        required: true
     }
 });
 
